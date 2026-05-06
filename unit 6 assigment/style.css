@@ -1,0 +1,75 @@
+/* Reset some default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Page style */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    padding: 40px;
+  }
+  
+  /* Main content box */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Headings */
+  h1 {
+    margin-bottom: 15px;
+    color: #1d3557;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: #1d3557;
+  }
+  
+  /* Intro text */
+  .intro {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Buttons area */
+  .button-group {
+    margin-bottom: 25px;
+  }
+  
+  .button-group button {
+    padding: 10px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #457b9d;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .button-group button:hover {
+    background-color: #1d5f85;
+  }
+  
+  /* Output box */
+  .output-box {
+    background-color: #eef4f8;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 120px;
+  }
+  
+  #output {
+    line-height: 1.6;
+    font-size: 16px;
+  }

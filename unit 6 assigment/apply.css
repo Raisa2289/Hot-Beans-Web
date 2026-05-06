@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --primary: #576b99;
+    --dark: #1f2a44;
+    --light: #f4f4f4;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: var(--light);
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  header {
+    background: var(--dark);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 60px;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  nav a.active {
+    border-bottom: 2px solid var(--primary);
+  }
+
+  .hero {
+    background: linear-gradient(rgba(31, 42, 68, 0.8), rgba(31, 42, 68, 0.8)),
+                url("karl-unsplash.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+   
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+   
+  .hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+  }
+
+.apply-section{
+    width: 400px;
+    margin: 50px auto;
+}
+
+#applyForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#applyForm input,
+#applyForm select,
+#applyForm textarea{
+    margin-bottom: 10px;
+    padding: 9px;
+}
+
+#applyForm button{
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-section {
+  flex: 1;
+}
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  }

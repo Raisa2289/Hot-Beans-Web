@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #576b99;
+  --dark: #1f2a44;
+  --light: #f4f4f4;
+}
+
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+  }
+  
+  /* Navbar */
+  header {
+    background: #1f2a44;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  nav a.active {
+    border-bottom: 2px solid var(--light);
+  }
+  
+  /* Hero */
+  .hero {
+    background: linear-gradient(rgba(31,42,68,0.8), rgba(31,42,68,0.8)),
+                url('safar-unsplash.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .hero h1 {
+    margin-bottom: 10px;
+  }
+  
+  /* Filters */
+  .filters {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .filters input,
+  .filters select {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Jobs Section */
+  .jobs {
+    padding: 20px 40px;
+  }
+  
+  .jobs h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Cards */
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    margin: 0 0 10px;
+  }
+  
+  .level {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .card p {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  button {
+    margin-top: 10px;
+    background: #1f2a44;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #162036;
+  }
+  
+  /* CTA */
+  .cta {
+    background: #1f2a44;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 40px;
+  }
+  
+  .cta button {
+    background: #fff;
+    color: #1f2a44;
+  }
+  
+  /* Footer */
+  footer {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+  }

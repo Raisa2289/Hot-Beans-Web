@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses | Hot Beans Web</title>
+  <link rel="stylesheet" href="courses.css" />
+</head>
+<body>
+ 
+  <!-- Header -->
+  <header>
+
+    <div class="container nav">
+
+      <div class="logo">
+        <img src="logo.png" alt="Hot Beans Web Logo">
+        <h1>Hot Beans Web</h1>
+      </div>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Job.html">Jobs</a></li>
+          <li><a href="course.html" class="active">Courses</a></li>
+          <li><a href="JobApplicationForm.html">Apply</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Our Web Development Courses</h2>
+      <p>
+        Explore professional courses designed to help you build strong skills
+        in web design, front-end development, and modern digital technologies.
+      </p>
+    </div>
+  </section>
+ 
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container filter-box">
+      <input type="text" id="searchInput" placeholder="Search courses..." />
+     
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="frontend">Front-End</option>
+        <option value="backend">Back-End</option>
+        <option value="design">Design</option>
+      </select>
+    </div>
+  </section>
+ 
+  <!-- Courses Section -->
+  <section class="courses-section">
+    <div class="container">
+      <h3>Available Courses</h3>
+ 
+      <div class="courses-grid" id="coursesGrid">
+        <div class="course-card" data-category="frontend">
+          <h4>HTML & CSS Fundamentals</h4>
+          <p class="level">Beginner</p>
+          <p>
+            Learn how to create web pages using HTML and style them with CSS.
+          </p>
+          <button>Read More</button>
+        </div>
+ 
+        <div class="course-card" data-category="frontend">
+          <h4>JavaScript Essentials</h4>
+          <p class="level">Beginner to Intermediate</p>
+          <p>
+            Understand variables, functions, events, and DOM manipulation.
+          </p>
+          <button>Read More</button>
+        </div>
+ 
+        <div class="course-card" data-category="design">
+          <h4>UI/UX Design Basics</h4>
+          <p class="level">Beginner</p>
+          <p>
+            Discover how to design user-friendly and visually attractive websites.
+          </p>
+          <button>Read More</button>
+        </div>
+ 
+        <div class="course-card" data-category="backend">
+          <h4>Introduction to Databases</h4>
+          <p class="level">Intermediate</p>
+          <p>
+            Learn how databases store information and support web applications.
+          </p>
+          <button>Read More</button>
+        </div>
+ 
+        <div class="course-card" data-category="backend">
+          <h4>PHP & MySQL Development</h4>
+          <p class="level">Intermediate</p>
+          <p>
+            Build dynamic websites using server-side programming and databases.
+          </p>
+          <button>Read More</button>
+        </div>
+ 
+        <div class="course-card" data-category="frontend">
+          <h4>Responsive Web Design</h4>
+          <p class="level">Intermediate</p>
+          <p>
+            Create websites that look professional on desktop, tablet, and mobile.
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+ 
+      <p id="noResults" class="no-results">No courses found.</p>
+    </div>
+  </section>
+ 
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h3>Start Your Learning Journey Today</h3>
+      <p>
+        Join our courses and develop the skills needed for a successful career
+        in web development.
+      </p>
+      <a href="JobApplicationForm.html" class="cta-btn">Apply Now</a>
+    </div>
+  </section>
+ 
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Hot Beans Web. All rights reserved.</p>
+    </div>
+  </footer>
+ 
+  <script src="courses.js"></script>
+</body>
+</html>

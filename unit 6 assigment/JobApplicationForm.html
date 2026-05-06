@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application form</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="logo.png" alt="Hot Beans Web Logo">
+          <h1>Hot Beans Web</h1>
+        </div>
+      
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="job.html">Jobs</a>
+          <a href="course.html">Courses</a>
+          <a href="JobApplicationForm.html" class="active">Apply</a>
+          <a href="team.html">Team</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="container">
+          <h2>Apply now</h2>
+          <p>
+            Join our professional courses designed to help you build strong skills
+            in web design, front-end development, and modern digital technologies.
+          </p>
+        </div>
+      </section>
+
+    <section class="apply-section">
+
+        <h2>Job Application Form</h2>
+
+        <form id="applyForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="position">Position</label>
+            <select id="position">
+                <option>Html & CSS Fundaments</option>
+                <option>Front-End Developer</option>
+                <option>Web Designer</option>
+                <option>JavaScript Developer</option>
+                <option>UI/UX Design</option>
+                <option>Introduction to Databases</option>
+                <option>PhP & MySQL Development</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <p id="result"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Hot Beans Web | Designed with sustainability in mind 🌱</p>
+    </footer>
+    
+</body>
+</html>

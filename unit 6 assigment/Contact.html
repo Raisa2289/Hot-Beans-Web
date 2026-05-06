@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Hot Beans Web</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Hot Beans Web Logo">
+    <h1>Hot Beans Web</h1>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Contact.html" class="active">Contact</a>
+    <a href="Job.html">Jobs</a>
+    <a href="Course.html">Courses</a>
+    <a href="JobApplicationForm.html">Apply</a>
+    <a href="team.html">Team</a>
+    
+  </nav>
+</header>
+
+<section class="contact-hero">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you — let’s build sustainable web solutions together.</p>
+</section>
+
+<main class="contact-container">
+
+  <!-- Contact Info -->
+  <section class="contact-info" aria-labelledby="info-heading">
+    <h2 id="info-heading">Get in Touch</h2>
+
+    <p><strong>Email:</strong> <a href="mailto:info@hotbeansweb.com">info@hotbeansweb.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+441234567890">+44 123 456 7890</a></p>
+    <p><strong>Location:</strong> London, UK</p>
+    <p><strong>Social Media:</strong> Facebook <a href="mailto:info@hotbeansweb">info@hotbeansweb</a></p>
+
+    <h3>🌱 Sustainability Promise</h3>
+    <p>
+      We minimise environmental impact by using efficient code, low-energy hosting,
+      and prioritising digital communication over paper-based processes.
+    </p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form" aria-labelledby="form-heading">
+    <h2 id="form-heading">Send a Message</h2>
+
+    <form id="contactForm" novalidate>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+      <small class="error" id="nameError"></small>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" required>
+      <small class="error" id="emailError"></small>
+
+      <label for="subject">Subject</label>
+      <select id="subject">
+        <option value="job">Job Enquiry</option>
+        <option value="general">General Question</option>
+        <option value="support">Support</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
+      <small class="error" id="messageError"></small>
+
+      <label class="checkbox">
+        <input type="checkbox" id="consent" required>
+        I agree to be contacted regarding my enquiry
+      </label>
+      <small class="error" id="consentError"></small>
+
+      <button type="submit">Send Message</button>
+
+      <p id="response" role="alert"></p>
+
+    </form>
+  </section>
+
+</main>
+
+<h3>Find Us</h3>
+
+<div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps?q=London,UK&output=embed"
+    width="100%" 
+    height="250" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<footer>
+  <p>© 2026 Hot Beans Web | Designed with sustainability in mind 🌱</p>
+</footer>
+
+<script src="contact.js"></script>
+
+</body>
+</html>
